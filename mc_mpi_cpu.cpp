@@ -20,9 +20,7 @@ static inline void split_csv(const std::string& s, std::vector<float>& out) {
         if (!item.empty()) out.push_back(std::stof(item));
     }
 }
-
 static inline float clamp_nonneg(float x) { return x < 0.f ? 0.f : x; }
-
 class CorrelatedNormalGenerator {
 private:
     std::mt19937& rng;
